@@ -5,8 +5,8 @@
   "private": true,
   "dependencies": {
   },
-  "engines": {
-    "node": "0.8.x",
-    "npm":  "1.1.x"
+  "engine": {
+	node: '0.8.x',
+	npm: '1.1.x'
   }
 }
