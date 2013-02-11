@@ -1,7 +1,10 @@
 var http = require("http"), fs = require("fs");
 
 http.createServer(function(request, response){
-	var new_file = fs.createWriteStream("log.txt");
+	response.writeHead(200);
+	response.write("Testando");
+	response.end();
+	/*var new_file = fs.createWriteStream("log.txt");
 	var total = request.headers["content-length"];
 	var uploadBytes = 0;
 
@@ -16,7 +19,7 @@ http.createServer(function(request, response){
 	request.on("end", function(){
 		response.end();
 	});
-
+	*/
 }).listen(8080);
 
 console.log("Escutando na 8080");
